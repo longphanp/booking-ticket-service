@@ -20,5 +20,3 @@ app.use("/v1", v1);
 app.listen(configs.port, () => {
   logger.info(`App listen at port ${configs.port}`);
 });
-
-export default app;
