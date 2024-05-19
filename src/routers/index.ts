@@ -3,7 +3,7 @@ import { Express } from "express";
 import v1 from "./v1";
 
 export default function initRouters(app: Express) {
-  app.get("/ping", (_, res) => {
+  app.get("/", (_, res) => {
     res.send("PONG");
   });
 
