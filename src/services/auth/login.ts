@@ -31,7 +31,7 @@ export default async function login(data: CredentialDTO) {
 
   const refreshToken = jwt.sign(
     {
-      email: user.email,
+      email: user?.email,
     },
     configs.google.clientSecret,
     { expiresIn: REFRESH_TOKEN_EXPIRED_TIME },
