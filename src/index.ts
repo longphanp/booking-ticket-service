@@ -9,6 +9,6 @@ const app = express();
 initMiddlewares(app);
 initRouters(app);
 
-app.listen(configs.port, async () => {
+app.listen(configs.port, () => {
   logger.info(`App listen at port ${configs.port}`);
 });
