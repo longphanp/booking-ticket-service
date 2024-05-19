@@ -14,5 +14,3 @@ app.listen(configs.port, async () => {
   await initResources();
   logger.info(`App listen at port ${configs.port}`);
 });
-
-export default app;
