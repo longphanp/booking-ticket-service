@@ -1,4 +1,5 @@
-import { Model, Schema, model } from "mongoose";
+import { Schema, model } from "mongoose";
+import Event from "types/Event";
 
 export const eventSchema = new Schema(
   {
@@ -12,5 +13,5 @@ export const eventSchema = new Schema(
   },
 );
 
-const EventModel: Model<Event> = model<Event>("events", eventSchema);
+const EventModel = model<Event>("events", eventSchema);
 export default EventModel;

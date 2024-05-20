@@ -4,8 +4,6 @@ import expressWinston from "express-winston";
 import helmet from "helmet";
 import { options } from "logger";
 
-import errorHandler from "./errorHandler";
-
 export default function initMiddlewares(app: Express) {
   app.use(helmet());
   app.use(cors());
@@ -16,5 +14,4 @@ export default function initMiddlewares(app: Express) {
     }),
   );
   app.use(expressWinston.logger(options));
-  app.use(errorHandler);
 }

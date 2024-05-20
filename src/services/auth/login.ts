@@ -3,10 +3,10 @@ import {
   ACCESS_TOKEN_EXPIRED_TIME,
   REFRESH_TOKEN_EXPIRED_TIME,
 } from "constants/token";
+import { CredentialDTO } from "dto/CredentialDTO";
 import { OAuth2Client } from "google-auth-library";
 import jwt from "jsonwebtoken";
 import UserModel from "models/User";
-import { CredentialDTO } from "types/CredentialDTO";
 
 const oauthClient = new OAuth2Client();
 

@@ -1,7 +1,7 @@
 import loginController from "controllers/auth/login";
+import { credentialSchema } from "dto/CredentialDTO";
 import { Router } from "express";
 import validateSchema from "middlewares/valdiateSchema";
-import { credentialSchema } from "types/CredentialDTO";
 
 const authRouter = Router();
 

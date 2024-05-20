@@ -12,13 +12,13 @@ export default function validateSchema(
       next();
     } catch (e) {
       if (e instanceof ZodError) {
-        res.status(500).json({
+        res.status(400).json({
           errors: e.errors,
         });
         return;
       }
 
-      throw e;
+      next(e);
     }
   };
 }
