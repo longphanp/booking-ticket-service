@@ -44,12 +44,9 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](src/assets/screenshot.png)
+> https://ticket-api.longphanp.com
 
-- This website allow you to book a ticket for an event
-- This also include admin page to manage ticket booking and events.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- This api service allow you to book a ticket for an event.
 
 ### Built With
 
